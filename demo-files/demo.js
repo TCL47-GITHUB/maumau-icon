@@ -85,5 +85,5 @@ document.body.addEventListener("click", function(e) {
 
         setTimeout(function () {
             toastContainer.classList.remove('show');
-        }, 4000);
+        }, 5000);
     }
