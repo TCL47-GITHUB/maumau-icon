@@ -38,8 +38,6 @@ document.body.addEventListener("click", function(e) {
         totalIconCountElement.innerHTML = '(Icons: ' + totalCount + ')';
     }
 
-    window.onload = countTotalIcon;
-
 //Live Search
     function searchIconByName(iconName) {
 
@@ -87,3 +85,36 @@ document.body.addEventListener("click", function(e) {
             toastContainer.classList.remove('show');
         }, 4000);
     }
+	
+		// Mở modal và hiển thị danh sách icon mới
+		function openModal() {
+        var overlay = document.getElementById('overlay');
+        overlay.style.display = 'flex';
+
+        // Danh sách icon mới
+        var newIcons = ['mm-snack','mm-canned-food','mm-spice','mm-alcohol','mm-juice','mm-milk-cheese','mm-nuts','mm-course','mm-entertainment-event','mm-baby-carriage','mm-breast-pump','mm-healthy-food','mm-kid-fashion'
+		,'mm-food-baby','mm-food-tray','mm-diapers','mm-safe','mm-pan'
+		];
+
+        // Hiển thị icon mới trong modal
+        var newIconContainer = document.getElementById('newIconContainer');
+        newIconContainer.innerHTML = '';
+
+        newIcons.forEach(function (iconClass) {
+            var iconElement = document.createElement('div');
+            iconElement.className = 'new-icon';
+            iconElement.innerHTML = '<i class="'+ 'icon-' + iconClass + '"></i>' + '<p>' + iconClass + '</p>';
+            iconElement.setAttribute('onclick', 'copyIconName("' + iconClass + '")');
+            newIconContainer.appendChild(iconElement);
+        });
+    }
+
+    function closeModal() {
+        var overlay = document.getElementById('overlay');
+        overlay.style.display = 'none';
+    }
+	window.onload = function () {
+		countTotalIcon();
+		openModal();
+	}
+	
