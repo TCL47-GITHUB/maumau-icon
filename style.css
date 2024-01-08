@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?ncuwu5');
-  src:  url('fonts/font-icon-maumau.eot?ncuwu5#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?ncuwu5') format('truetype'),
-    url('fonts/font-icon-maumau.woff?ncuwu5') format('woff'),
-    url('fonts/font-icon-maumau.svg?ncuwu5#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?62w3jl');
+  src:  url('fonts/font-icon-maumau.eot?62w3jl#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?62w3jl') format('truetype'),
+    url('fonts/font-icon-maumau.woff?62w3jl') format('woff'),
+    url('fonts/font-icon-maumau.svg?62w3jl#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mm-elderly:before {
+  content: "\ea67";
+}
+.icon-mm-fire:before {
+  content: "\ea68";
+}
+.icon-mm-hat:before {
+  content: "\ea69";
+}
+.icon-mm-litter:before {
+  content: "\ea6a";
+}
+.icon-mm-page-stacked-scrolling:before {
+  content: "\ea6b";
+}
+.icon-mm-rabit:before {
+  content: "\ea6c";
+}
 .icon-mm-accountant:before {
   content: "\e900";
 }

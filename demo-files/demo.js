@@ -92,7 +92,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = ['mm-snack','mm-canned-food','mm-spice','mm-alcohol','mm-juice','mm-milk-cheese','mm-nuts','mm-course','mm-entertainment-event','mm-baby-carriage','mm-breast-pump','mm-healthy-food','mm-kid-fashion'
+        var newIcons = ["mm-rabit", "mm-elderly", "mm-fire", "mm-hat", "mm-litter", "mm-page-stacked-scrolling",'mm-snack','mm-canned-food','mm-spice','mm-alcohol','mm-juice','mm-milk-cheese','mm-nuts','mm-course','mm-entertainment-event','mm-baby-carriage','mm-breast-pump','mm-healthy-food','mm-kid-fashion'
 		,'mm-food-baby','mm-food-tray','mm-diapers','mm-safe','mm-pan'
 		];
 
