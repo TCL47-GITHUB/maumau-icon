@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?62w3jl');
-  src:  url('fonts/font-icon-maumau.eot?62w3jl#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?62w3jl') format('truetype'),
-    url('fonts/font-icon-maumau.woff?62w3jl') format('woff'),
-    url('fonts/font-icon-maumau.svg?62w3jl#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?p0dug2');
+  src:  url('fonts/font-icon-maumau.eot?p0dug2#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?p0dug2') format('truetype'),
+    url('fonts/font-icon-maumau.woff?p0dug2') format('woff'),
+    url('fonts/font-icon-maumau.svg?p0dug2#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mm-fire-solid:before {
+  content: "\ea6d";
+}
 .icon-mm-elderly:before {
   content: "\ea67";
 }
