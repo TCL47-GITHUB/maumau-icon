@@ -92,7 +92,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = ["mm-flash", "mm-flash-1", "mm-fire","mm-fire-solid","mm-home","mm-home-solid"
+        var newIcons = ["mm-avatar","mm-menu-1", "mm-flash", "mm-flash-1", "mm-fire","mm-fire-solid","mm-home","mm-home-solid"
 		];
 
         // Hiển thị icon mới trong modal
