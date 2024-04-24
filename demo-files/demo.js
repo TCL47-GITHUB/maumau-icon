@@ -92,7 +92,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = ["mm-shopping-cart-thin","mm-shopping-cart","mm-shopping-cart-1","mm-shopping-bag","mm-shopping-bags","mm-shopping-bag-thin","mm-webpage","mm-webpage-1","mm-menu-2","mm-avatar","mm-menu-1", "mm-flash", "mm-flash-1", "mm-fire","mm-fire-solid","mm-home","mm-home-solid"
+        var newIcons = ["mm-clipboard-list-check","mm-shopping-cart-3","mm-shopping-cart-2","mm-shopping-cart-thin","mm-shopping-cart","mm-shopping-cart-1","mm-shopping-bag","mm-shopping-bags","mm-shopping-bag-thin","mm-webpage","mm-webpage-1","mm-menu-2","mm-avatar","mm-menu-1", "mm-flash", "mm-flash-1", "mm-fire","mm-fire-solid","mm-home","mm-home-solid"
 		];
 
         // Hiển thị icon mới trong modal

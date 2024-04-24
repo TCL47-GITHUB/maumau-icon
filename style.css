@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?zbqomw');
-  src:  url('fonts/font-icon-maumau.eot?zbqomw#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?zbqomw') format('truetype'),
-    url('fonts/font-icon-maumau.woff?zbqomw') format('woff'),
-    url('fonts/font-icon-maumau.svg?zbqomw#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?mrwjh7');
+  src:  url('fonts/font-icon-maumau.eot?mrwjh7#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?mrwjh7') format('truetype'),
+    url('fonts/font-icon-maumau.woff?mrwjh7') format('woff'),
+    url('fonts/font-icon-maumau.svg?mrwjh7#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mm-clipboard-list-check:before {
+  content: "\ea7a";
+}
+.icon-mm-shopping-cart-2:before {
+  content: "\ea7b";
+}
+.icon-mm-shopping-cart-3:before {
+  content: "\ea7c";
+}
 .icon-mm-accountant:before {
   content: "\e900";
 }
