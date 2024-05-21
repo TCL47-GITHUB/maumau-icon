@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?uxfj1t');
-  src:  url('fonts/font-icon-maumau.eot?uxfj1t#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?uxfj1t') format('truetype'),
-    url('fonts/font-icon-maumau.woff?uxfj1t') format('woff'),
-    url('fonts/font-icon-maumau.svg?uxfj1t#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?llepy8');
+  src:  url('fonts/font-icon-maumau.eot?llepy8#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?llepy8') format('truetype'),
+    url('fonts/font-icon-maumau.woff?llepy8') format('woff'),
+    url('fonts/font-icon-maumau.svg?llepy8#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mm-car-plane:before {
+  content: "\ea8c";
+}
 .icon-mm-accountant:before {
   content: "\e900";
 }
