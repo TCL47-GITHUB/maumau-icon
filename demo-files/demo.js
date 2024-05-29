@@ -65,7 +65,6 @@ document.body.addEventListener("click", function(e) {
             copyIconName(target.textContent.trim());
         }
     });
-
 	
 	function copyIconName(iconName) {
         // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
@@ -92,7 +91,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = ["mm-car-plane","mm-chats-1-smile","mm-chats-dots-thin","mm-chats-2","mm-chats-thin","mm-chats-1","mm-chats","mm-more-h-1","mm-check-list-file-thin","mm-feedback2","mm-clipboard-list-check","mm-shopping-cart-3","mm-shopping-cart-2","mm-shopping-cart-thin","mm-shopping-cart","mm-shopping-cart-1","mm-shopping-bag","mm-shopping-bags","mm-shopping-bag-1","mm-shopping-bag-thin","mm-webpage","mm-webpage-1","mm-menu-2","mm-avatar","mm-menu-1", "mm-flash", "mm-flash-1", "mm-fire","mm-fire-solid","mm-home","mm-home-solid"
+        var newIcons = ["mm-post-add","mm-post-add-thin","mm-car-plane","mm-chats-1-smile","mm-chats-dots-thin","mm-chats-2","mm-chats-thin","mm-chats-1","mm-chats","mm-more-h-1","mm-check-list-file-thin","mm-feedback2","mm-clipboard-list-check","mm-shopping-cart-3","mm-shopping-cart-2","mm-shopping-cart-thin","mm-shopping-cart","mm-shopping-cart-1","mm-shopping-bag","mm-shopping-bags","mm-shopping-bag-1","mm-shopping-bag-thin","mm-webpage","mm-webpage-1","mm-menu-2","mm-avatar","mm-menu-1", "mm-flash", "mm-flash-1", "mm-fire","mm-fire-solid","mm-home","mm-home-solid"
 		];
 
         // Hiển thị icon mới trong modal
