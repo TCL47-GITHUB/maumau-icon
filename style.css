@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?a8312i');
-  src:  url('fonts/font-icon-maumau.eot?a8312i#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?a8312i') format('truetype'),
-    url('fonts/font-icon-maumau.woff?a8312i') format('woff'),
-    url('fonts/font-icon-maumau.svg?a8312i#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?w33fdc');
+  src:  url('fonts/font-icon-maumau.eot?w33fdc#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?w33fdc') format('truetype'),
+    url('fonts/font-icon-maumau.woff?w33fdc') format('woff'),
+    url('fonts/font-icon-maumau.svg?w33fdc#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mm-avatar-solid:before {
+  content: "\ea93";
+}
+.icon-mm-avatar:before {
+  content: "\e918";
+}
 .icon-mm-accountant:before {
   content: "\e900";
 }
@@ -96,9 +102,6 @@ i {
 }
 .icon-mm-arrow-up-down:before {
   content: "\e917";
-}
-.icon-mm-avatar:before {
-  content: "\e918";
 }
 .icon-mm-award:before {
   content: "\e919";
