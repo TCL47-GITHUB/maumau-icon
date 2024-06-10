@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?w33fdc');
-  src:  url('fonts/font-icon-maumau.eot?w33fdc#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?w33fdc') format('truetype'),
-    url('fonts/font-icon-maumau.woff?w33fdc') format('woff'),
-    url('fonts/font-icon-maumau.svg?w33fdc#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?udws93');
+  src:  url('fonts/font-icon-maumau.eot?udws93#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?udws93') format('truetype'),
+    url('fonts/font-icon-maumau.woff?udws93') format('woff'),
+    url('fonts/font-icon-maumau.svg?udws93#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -742,11 +742,14 @@ i {
 .icon-mm-more-h:before {
   content: "\e9ed";
 }
+.icon-mm-more-v:before {
+  content: "\e9ef";
+}
 .icon-mm-more-h-1:before {
   content: "\e9ee";
 }
-.icon-mm-more-v:before {
-  content: "\e9ef";
+.icon-mm-more-v-1:before {
+  content: "\ea94";
 }
 .icon-mm-mother-baby:before {
   content: "\e9f0";
