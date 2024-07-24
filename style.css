@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?1q21h8');
-  src:  url('fonts/font-icon-maumau.eot?1q21h8#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?1q21h8') format('truetype'),
-    url('fonts/font-icon-maumau.woff?1q21h8') format('woff'),
-    url('fonts/font-icon-maumau.svg?1q21h8#font-icon-maumau') format('svg');
+  src:  url('fonts/font-icon-maumau.eot?emahkr');
+  src:  url('fonts/font-icon-maumau.eot?emahkr#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau.ttf?emahkr') format('truetype'),
+    url('fonts/font-icon-maumau.woff?emahkr') format('woff'),
+    url('fonts/font-icon-maumau.svg?emahkr#font-icon-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mm-fullscreen:before {
+  content: "\ea97";
+}
 .icon-mm-technicians:before {
   content: "\ea95";
 }
