@@ -1,4 +1,5 @@
 const iconData = [
+{ code: "icon-mm-fullscreen-1" },
 { code: "icon-mm-fullscreen" },
 { code: "icon-mm-technicians" },
 { code: "icon-mm-tour-guide" },
