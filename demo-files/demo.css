@@ -538,7 +538,7 @@ p {
 		  height:350px;
 		  overflow:scroll;
 		  overflow-x: auto;
-		  
+		  margin-top: 0.5rem;
 		}
 
 
