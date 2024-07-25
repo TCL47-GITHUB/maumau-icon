@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="demo-files/demo.css">
     <link rel="stylesheet" href="style.css"></head>
+    <script src="https://cdn.tailwindcss.com"></script>
 <body>
     <div class="bgc1 clearfix">
         <a class="logo" href="/">
@@ -19,6 +20,47 @@
         <h1 class="mhmm mvm"><span class="fgc1">Font Name:</span> font-icon-maumau <small class="fgc1"><span id="totalIconCount"></span></small></h1>
             <div class="toast-container" id="toastContainer"></div>
             <!-- Thẻ overlay và modal -->
+             <!-- Popup structure -->
+             <div class="flex m-2">
+                <button id="open-popup" class="text-base  rounded-r-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
+            hover:bg-teal-700 hover:text-teal-100 
+            bg-teal-100 
+            text-teal-700 
+            border duration-200 ease-in-out 
+            border-teal-600 transition">
+                    <div class="flex leading-5">                  
+                        Icon data</div>
+                </button>
+            
+                <button onclick="openModal()" class="text-base  rounded-l-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
+            hover:bg-teal-700 hover:text-teal-100 
+            bg-teal-100 
+            text-teal-700 
+            border duration-200 ease-in-out 
+            border-teal-600 transition">
+                    <div class="flex leading-5">
+                        
+                        New Icon</div>
+                </button>
+            </div>
+             
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <i class="close-btn icon-mm-times"></i>
+                        <p style="font-size: 1.5rem; margin-top: 14px; border-bottom: 1px solid #e8e8e8; padding: 0 1rem;">Icon Data</p>
+                        <pre id="file-content"></pre>
+
+                        <button id="copy-btn" class="mt-3 text-base focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
+        
+            bg-white 
+            text-teal-700 
+            border 
+            border-teal-600 ">
+                    <div class="flex leading-5">                  
+                        <i class="icon-mm-copy"></i> Sao chép</div>
+                </button>
+                    </div>
+                </div>
                 <div class="overlay" id="overlay">
                     <div class="modal">
                         <strong style="font-size: 1.5rem; margin-top: 14px; border-bottom: 1px solid #e8e8e8; padding: 0 1rem;">Icon mới</strong>

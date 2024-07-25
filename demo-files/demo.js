@@ -111,8 +111,73 @@ document.body.addEventListener("click", function(e) {
         var overlay = document.getElementById('overlay');
         overlay.style.display = 'none';
     }
+
+     // Close the popup if the user clicks outside of the popup content
+     window.addEventListener('click', function(event) {
+        if (event.target == overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+	
 	window.onload = function () {
 		countTotalIcon();
 		openModal();
 	}
 	
+
+
+
+	
+	 // Get elements
+        const popup = document.getElementById('popup');
+        const openPopupBtn = document.getElementById('open-popup');
+        const closeBtn = document.getElementsByClassName('close-btn')[0];
+        const fileContent = document.getElementById('file-content');
+        const copyBtn = document.getElementById('copy-btn');
+
+        // Function to fetch and display the file content
+        async function displayFileContent() {
+            try {
+                const response = await fetch('iconData.txt');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const text = await response.text();
+                fileContent.textContent = text;
+            } catch (error) {
+                fileContent.textContent = `Error: ${error.message}`;
+            }
+        }
+
+        // Function to open the popup
+        function openPopup() {
+            displayFileContent();
+            popup.style.display = 'flex';
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            popup.style.display = 'none';
+        }
+
+        // Function to copy the content to clipboard
+        function copyContent() {
+            const text = fileContent.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Đã sao chép');
+            }).catch(err => {
+                alert('Failed to copy content: ', err);
+            });    
+        }
+
+        // Event listeners
+        openPopupBtn.addEventListener('click', openPopup);
+        closeBtn.addEventListener('click', closePopup);
+        copyBtn.addEventListener('click', copyContent);
+
+        // Close the popup if the user clicks outside of the popup content
+        window.addEventListener('click', function(event) {
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
