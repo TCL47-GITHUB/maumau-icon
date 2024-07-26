@@ -134,6 +134,7 @@ document.body.addEventListener("click", function(e) {
         const closeBtn = document.getElementsByClassName('close-btn')[0];
         const fileContent = document.getElementById('file-content');
         const copyBtn = document.getElementById('copy-btn');
+        const iconCount = document.getElementById('icon-count');
 
         // Function to fetch and display the file content
         async function displayFileContent() {
@@ -144,6 +145,13 @@ document.body.addEventListener("click", function(e) {
                 }
                 const text = await response.text();
                 fileContent.textContent = text;
+
+
+                // Count the occurrences of "icon-mm"
+                const iconCountMatch = text.match(/icon-mm/g);
+                const count = iconCountMatch ? iconCountMatch.length : 0;
+                iconCount.textContent = ` (${count})`;
+
             } catch (error) {
                 fileContent.textContent = `Error: ${error.message}`;
             }
