@@ -91,7 +91,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = [""
+        var newIcons = ["mm-water-heater","mm-dishwasher","mm-smokeconsumer","mm-utility-1","mm-karaoke","mm-makeup-table",
 		];
 
         // Hiển thị icon mới trong modal
