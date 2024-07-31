@@ -101,7 +101,7 @@ document.body.addEventListener("click", function(e) {
         newIcons.forEach(function (iconClass) {
             var iconElement = document.createElement('div');
             iconElement.className = 'new-icon';
-            iconElement.innerHTML = '<i class="'+ 'icon-' + iconClass + '"></i>' + '<p>' + iconClass + '</p>';
+            iconElement.innerHTML = '<i class="'+ 'icon2-' + iconClass + '"></i>' + '<p>' + iconClass + '</p>';
             iconElement.setAttribute('onclick', 'copyIconName("' + iconClass + '")');
             newIconContainer.appendChild(iconElement);
         });
