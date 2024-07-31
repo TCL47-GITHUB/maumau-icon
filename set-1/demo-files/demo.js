@@ -91,7 +91,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = ["mm-fullscreen-1", "mm-fullscreen","mm-technicians","mm-tour-guide","mm-more-v-1","mm-avatar","mm-avatar-solid","mm-shopping-bag","mm-shopping-bag-solid","mm-checklist","mm-checklist-solid","mm-bell","mm-bell-solid","mm-chats-1-smile","mm-chats-1-smile-solid","mm-home","mm-home-solid","mm-post-add","mm-car-plane","mm-chats-1-smile","mm-chats-dots-thin","mm-chats-2","mm-chats-thin","mm-chats-1","mm-chats","mm-more-h-1","mm-check-list-file-thin","mm-feedback2","mm-clipboard-list-check","mm-shopping-cart-3","mm-shopping-cart-2","mm-shopping-cart-thin","mm-shopping-cart","mm-shopping-cart-1"
+        var newIcons = ["mm-direction-solid","mm-clock-solid","mm-box-solid", "mm-locked-solid", "mm-analysis-1-solid","mm-analysis-solid", "mm-copy-solid","mm-phone-1-solid", "mm-phone-solid", "mm-fullscreen-1", "mm-fullscreen","mm-technicians","mm-tour-guide","mm-more-v-1","mm-avatar","mm-avatar-solid","mm-shopping-bag","mm-shopping-bag-solid","mm-checklist","mm-checklist-solid","mm-bell","mm-bell-solid","mm-chats-1-smile","mm-chats-1-smile-solid","mm-home","mm-home-solid","mm-post-add","mm-car-plane","mm-chats-1-smile","mm-chats-dots-thin","mm-chats-2","mm-chats-thin","mm-chats-1","mm-chats","mm-more-h-1","mm-check-list-file-thin","mm-feedback2","mm-clipboard-list-check","mm-shopping-cart-3","mm-shopping-cart-2","mm-shopping-cart-thin","mm-shopping-cart","mm-shopping-cart-1"
 		];
 
         // Hiển thị icon mới trong modal
@@ -134,6 +134,7 @@ document.body.addEventListener("click", function(e) {
         const closeBtn = document.getElementsByClassName('close-btn')[0];
         const fileContent = document.getElementById('file-content');
         const copyBtn = document.getElementById('copy-btn');
+        const iconCount = document.getElementById('icon-count');
 
         // Function to fetch and display the file content
         async function displayFileContent() {
@@ -144,6 +145,13 @@ document.body.addEventListener("click", function(e) {
                 }
                 const text = await response.text();
                 fileContent.textContent = text;
+
+
+                // Count the occurrences of "icon-mm"
+                const iconCountMatch = text.match(/icon-mm/g);
+                const count = iconCountMatch ? iconCountMatch.length : 0;
+                iconCount.textContent = ` (${count})`;
+
             } catch (error) {
                 fileContent.textContent = `Error: ${error.message}`;
             }
