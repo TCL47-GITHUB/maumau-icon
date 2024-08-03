@@ -159,7 +159,7 @@ style="
 >Icon mới</strong
 >
 <div class="icon-container" id="newIconContainer"></div>
-<i onclick="closeModal()" class="close-btn icon-mm-times"></i>
+<i onclick="closeModal()" class="close-btn mm-1 times"></i>
 </div>
 </div>
 
