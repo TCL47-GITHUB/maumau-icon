@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'font-icon-maumau';
-  src:  url('fonts/font-icon-maumau.eot?69r4dd');
-  src:  url('fonts/font-icon-maumau.eot?69r4dd#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-maumau.ttf?69r4dd') format('truetype'),
-    url('fonts/font-icon-maumau.woff?69r4dd') format('woff'),
-    url('fonts/font-icon-maumau.svg?69r4dd#font-icon-maumau') format('svg');
+  font-family: 'font-icon-maumau-2';
+  src:  url('fonts/font-icon-maumau-2.eot?krocxn');
+  src:  url('fonts/font-icon-maumau-2.eot?krocxn#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-maumau-2.ttf?krocxn') format('truetype'),
+    url('fonts/font-icon-maumau-2.woff?krocxn') format('woff'),
+    url('fonts/font-icon-maumau-2.svg?krocxn#font-icon-maumau-2') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-i {
+.mm-2 {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'font-icon-maumau' !important;
+  font-family: 'font-icon-maumau-2' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,162 +25,174 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon2-mm-airport:before {
-  content: "\f900";
+.airport:before {
+  content: "\e900";
 }
-.icon2-mm-anchor:before {
-  content: "\f901";
+.anchor:before {
+  content: "\e901";
 }
-.icon2-mm-bbq:before {
-  content: "\f902";
+.beach:before {
+  content: "\e902";
 }
-.icon2-mm-beach:before {
-  content: "\f903";
+.cafe:before {
+  content: "\e903";
 }
-.icon2-mm-cafe:before {
-  content: "\f904";
+.children-play-area:before {
+  content: "\e904";
 }
-.icon2-mm-children-play-area:before {
-  content: "\f905";
+.cinema:before {
+  content: "\e905";
 }
-.icon2-mm-cinema:before {
-  content: "\f906";
+.closet:before {
+  content: "\e906";
 }
-.icon2-mm-closet:before {
-  content: "\f907";
+.conditioner:before {
+  content: "\e907";
 }
-.icon2-mm-conditioner:before {
-  content: "\f908";
+.culture:before {
+  content: "\e908";
 }
-.icon2-mm-culture:before {
-  content: "\f909";
+.electric-post:before {
+  content: "\e909";
 }
-.icon2-mm-dishwasher:before {
-  content: "\f90a";
+.forest:before {
+  content: "\e90a";
 }
-.icon2-mm-forest:before {
-  content: "\f90b";
+.fridge:before {
+  content: "\e90b";
 }
-.icon2-mm-fridge:before {
-  content: "\f90c";
+.hand:before {
+  content: "\e90c";
 }
-.icon2-mm-gym:before {
-  content: "\f90d";
+.hight-way:before {
+  content: "\e90d";
 }
-.icon2-mm-hand:before {
-  content: "\f90e";
+.industrial-area:before {
+  content: "\e90e";
 }
-.icon2-mm-high-way:before {
-  content: "\f90f";
+.karaoke:before {
+  content: "\e90f";
 }
-.icon2-mm-industrial-area:before {
-  content: "\f910";
+.kitchen-cabinet:before {
+  content: "\e910";
 }
-.icon2-mm-karaoke:before {
-  content: "\f911";
+.main-road:before {
+  content: "\e911";
 }
-.icon2-mm-kitchen-cabinet:before {
-  content: "\f912";
+.makeup-table:before {
+  content: "\e912";
 }
-.icon2-mm-makeup-table:before {
-  content: "\f913";
+.market:before {
+  content: "\e913";
 }
-.icon2-mm-market:before {
-  content: "\f914";
+.mini-shop:before {
+  content: "\e914";
 }
-.icon2-mm-mini-shop:before {
-  content: "\f915";
+.mini-shop-1:before {
+  content: "\e915";
 }
-.icon2-mm-mini-shop-1:before {
-  content: "\f916";
+.mountain:before {
+  content: "\e916";
 }
-.icon2-mm-mountain:before {
-  content: "\f917";
+.neighbor:before {
+  content: "\e917";
 }
-.icon2-mm-neighbor:before {
-  content: "\f918";
+.noname-8:before {
+  content: "\e918";
 }
-.icon2-mm-noname-8:before {
-  content: "\f919";
+.park:before {
+  content: "\e919";
 }
-.icon2-mm-park:before {
-  content: "\f91a";
+.park-under:before {
+  content: "\e91a";
 }
-.icon2-mm-park-under:before {
-  content: "\f91b";
+.person-forest:before {
+  content: "\e91b";
 }
-.icon2-mm-person-forest:before {
-  content: "\f91c";
+.preschool:before {
+  content: "\e91c";
 }
-.icon2-mm-playground:before {
-  content: "\f91d";
+.residential:before {
+  content: "\e91d";
 }
-.icon2-mm-pool:before {
-  content: "\f91e";
+.restaurant:before {
+  content: "\e91e";
 }
-.icon2-mm-preschool:before {
-  content: "\f91f";
+.river:before {
+  content: "\e91f";
 }
-.icon2-mm-residential:before {
-  content: "\f920";
+.road-3:before {
+  content: "\e920";
 }
-.icon2-mm-restaurant:before {
-  content: "\f921";
+.school:before {
+  content: "\e921";
 }
-.icon2-mm-river:before {
-  content: "\f922";
+.science:before {
+  content: "\e922";
 }
-.icon2-mm-school:before {
-  content: "\f923";
+.security:before {
+  content: "\e923";
 }
-.icon2-mm-science:before {
-  content: "\f924";
+.security-camera:before {
+  content: "\e924";
 }
-.icon2-mm-security:before {
-  content: "\f925";
+.shower:before {
+  content: "\e925";
 }
-.icon2-mm-security-camera:before {
-  content: "\f926";
+.smokeconsumer:before {
+  content: "\e926";
 }
-.icon2-mm-shower:before {
-  content: "\f927";
+.solid-bbq:before {
+  content: "\e927";
 }
-.icon2-mm-sink:before {
-  content: "\f928";
+.solid-dishwasher:before {
+  content: "\e928";
 }
-.icon2-mm-smokeconsumer:before {
-  content: "\f929";
+.solid-gym:before {
+  content: "\e929";
 }
-.icon2-mm-stadium:before {
-  content: "\f92a";
+.solid-high-way:before {
+  content: "\e92a";
 }
-.icon2-mm-store:before {
-  content: "\f92b";
+.solid-playground:before {
+  content: "\e92b";
 }
-.icon2-mm-swimming-pool:before {
-  content: "\f92c";
+.solid-pool:before {
+  content: "\e92c";
 }
-.icon2-mm-table:before {
-  content: "\f92d";
+.solid-sink:before {
+  content: "\e92d";
 }
-.icon2-mm-theatre:before {
-  content: "\f92e";
+.solid-table:before {
+  content: "\e92e";
 }
-.icon2-mm-tivi:before {
-  content: "\f92f";
+.solid-water-heater:before {
+  content: "\e92f";
 }
-.icon2-mm-university:before {
-  content: "\f930";
+.stadium:before {
+  content: "\e930";
 }
-.icon2-mm-utility:before {
-  content: "\f931";
+.store:before {
+  content: "\e931";
 }
-.icon2-mm-utility-1:before {
-  content: "\f932";
+.swimming-pool:before {
+  content: "\e932";
 }
-.icon2-mm-washing-machine:before {
-  content: "\f933";
+.theatre:before {
+  content: "\e933";
 }
-.icon2-mm-water-heater:before {
-  content: "\f934";
+.tivi:before {
+  content: "\e934";
+}
+.university:before {
+  content: "\e935";
+}
+.utility:before {
+  content: "\e936";
+}
+.washing-machine:before {
+  content: "\e937";
+}
+.water-heater:before {
+  content: "\e938";
 }
