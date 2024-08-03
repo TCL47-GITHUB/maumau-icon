@@ -205,8 +205,8 @@ async function displayFileContent() {
     const text = await response.text();
     fileContent.textContent = text;
 
-    // Count the occurrences of "icon-mm"
-    const iconCountMatch = text.match(/icon-mm/g);
+    // Count the occurrences of "ad-mm"
+    const iconCountMatch = text.match(/ad-mm/g);
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
