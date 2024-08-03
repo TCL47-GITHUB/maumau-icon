@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-admin-maumau';
-  src:  url('fonts/font-icon-admin-maumau.eot?vkh0m4');
-  src:  url('fonts/font-icon-admin-maumau.eot?vkh0m4#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-admin-maumau.ttf?vkh0m4') format('truetype'),
-    url('fonts/font-icon-admin-maumau.woff?vkh0m4') format('woff'),
-    url('fonts/font-icon-admin-maumau.svg?vkh0m4#font-icon-admin-maumau') format('svg');
+  src:  url('fonts/font-icon-admin-maumau.eot?s0gv86');
+  src:  url('fonts/font-icon-admin-maumau.eot?s0gv86#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-admin-maumau.ttf?s0gv86') format('truetype'),
+    url('fonts/font-icon-admin-maumau.woff?s0gv86') format('woff'),
+    url('fonts/font-icon-admin-maumau.svg?s0gv86#font-icon-admin-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,302 +26,302 @@
 }
 
 .stop-circle:before {
-  content: "\e900";
+  content: "\f100";
 }
 .aperture:before {
-  content: "\e901";
+  content: "\f101";
 }
 .bar-chart-square:before {
-  content: "\e902";
+  content: "\f102";
 }
 .book-content:before {
-  content: "\e903";
+  content: "\f103";
 }
 .briefcase:before {
-  content: "\e904";
+  content: "\f104";
 }
 .category:before {
-  content: "\e905";
+  content: "\f105";
 }
 .chalkboard:before {
-  content: "\e906";
+  content: "\f106";
 }
 .chevron-down:before {
-  content: "\e907";
+  content: "\f107";
 }
 .chevron-left:before {
-  content: "\e908";
+  content: "\f108";
 }
 .chevron-right:before {
-  content: "\e909";
+  content: "\f109";
 }
 .chevron-up:before {
-  content: "\e90a";
+  content: "\f10a";
 }
 .cog:before {
-  content: "\e90b";
+  content: "\f10b";
 }
 .color:before {
-  content: "\e90c";
+  content: "\f10c";
 }
 .comment-detail:before {
-  content: "\e90d";
+  content: "\f10d";
 }
 .copy:before {
-  content: "\e90e";
+  content: "\f10e";
 }
 .credit-card:before {
-  content: "\e90f";
+  content: "\f10f";
 }
 .credit-card-alt:before {
-  content: "\e910";
+  content: "\f110";
 }
 .dock-bottom:before {
-  content: "\e911";
+  content: "\f111";
 }
 .dock-top:before {
-  content: "\e912";
+  content: "\f112";
 }
 .envelope:before {
-  content: "\e913";
+  content: "\f113";
 }
 .error:before {
-  content: "\e914";
+  content: "\f114";
 }
 .error-alt:before {
-  content: "\e915";
+  content: "\f115";
 }
 .help-circle:before {
-  content: "\e916";
+  content: "\f116";
 }
 .hide:before {
-  content: "\e917";
+  content: "\f117";
 }
 .home-smile:before {
-  content: "\e918";
+  content: "\f118";
 }
 .horizontal-center:before {
-  content: "\e919";
+  content: "\f119";
 }
 .image:before {
-  content: "\e91a";
+  content: "\f11a";
 }
 .images:before {
-  content: "\e91b";
+  content: "\f11b";
 }
 .info-circle:before {
-  content: "\e91c";
+  content: "\f11c";
 }
 .info-square:before {
-  content: "\e91d";
+  content: "\f11d";
 }
 .link:before {
-  content: "\e91e";
+  content: "\f11e";
 }
 .list-link:before {
-  content: "\e91f";
+  content: "\f11f";
 }
 .list-ul:before {
-  content: "\e920";
+  content: "\f120";
 }
 .loader-circle:before {
-  content: "\e921";
+  content: "\f121";
 }
 .log-out:before {
-  content: "\e922";
+  content: "\f122";
 }
 .map:before {
-  content: "\e923";
+  content: "\f123";
 }
 .map-pin:before {
-  content: "\e924";
+  content: "\f124";
 }
 .menu-alt-left:before {
-  content: "\e925";
+  content: "\f125";
 }
 .message-square-edit:before {
-  content: "\e926";
+  content: "\f126";
 }
 .minus-circle:before {
-  content: "\e927";
+  content: "\f127";
 }
 .note:before {
-  content: "\e928";
+  content: "\f128";
 }
 .pin:before {
-  content: "\e929";
+  content: "\f129";
 }
 .plus:before {
-  content: "\e92a";
+  content: "\f12a";
 }
 .plus-circle:before {
-  content: "\e92b";
+  content: "\f12b";
 }
 .polygon:before {
-  content: "\e92c";
+  content: "\f12c";
 }
 .rocket:before {
-  content: "\e92d";
+  content: "\f12d";
 }
 .save:before {
-  content: "\e92e";
+  content: "\f12e";
 }
 .s-chevron-up:before {
-  content: "\e92f";
+  content: "\f12f";
 }
 .search:before {
-  content: "\e930";
+  content: "\f130";
 }
 .share-link:before {
-  content: "\e931";
+  content: "\f131";
 }
 .show:before {
-  content: "\e932";
+  content: "\f132";
 }
 .sitemap:before {
-  content: "\e933";
+  content: "\f133";
 }
 .solid-bar-chart-square:before {
-  content: "\e934";
+  content: "\f134";
 }
 .solid-book-content:before {
-  content: "\e935";
+  content: "\f135";
 }
 .solid-briefcase:before {
-  content: "\e936";
+  content: "\f136";
 }
 .solid-category:before {
-  content: "\e937";
+  content: "\f137";
 }
 .solid-chalkboard:before {
-  content: "\e938";
+  content: "\f138";
 }
 .solid-chevron-down:before {
-  content: "\e939";
+  content: "\f139";
 }
 .solid-chevron-left:before {
-  content: "\e93a";
+  content: "\f13a";
 }
 .solid-chevron-right:before {
-  content: "\e93b";
+  content: "\f13b";
 }
 .solid-cog:before {
-  content: "\e93c";
+  content: "\f13c";
 }
 .solid-color:before {
-  content: "\e93d";
+  content: "\f13d";
 }
 .solid-comment-detail:before {
-  content: "\e93e";
+  content: "\f13e";
 }
 .solid-copy:before {
-  content: "\e93f";
+  content: "\f13f";
 }
 .solid-coupon:before {
-  content: "\e940";
+  content: "\f140";
 }
 .solid-credit-card:before {
-  content: "\e941";
+  content: "\f141";
 }
 .solid-credit-card-alt:before {
-  content: "\e942";
+  content: "\f142";
 }
 .solid-dock-bottom:before {
-  content: "\e943";
+  content: "\f143";
 }
 .solid-dock-top:before {
-  content: "\e944";
+  content: "\f144";
 }
 .solid-envelope:before {
-  content: "\e945";
+  content: "\f145";
 }
 .solid-error:before {
-  content: "\e946";
+  content: "\f146";
 }
 .solid-error-alt:before {
-  content: "\e947";
+  content: "\f147";
 }
 .solid-help-circle:before {
-  content: "\e948";
+  content: "\f148";
 }
 .solid-home-smile:before {
-  content: "\e949";
+  content: "\f149";
 }
 .solid-hourglass:before {
-  content: "\e94a";
+  content: "\f14a";
 }
 .solid-image:before {
-  content: "\e94b";
+  content: "\f14b";
 }
 .solid-info-circle:before {
-  content: "\e94c";
+  content: "\f14c";
 }
 .solid-info-square:before {
-  content: "\e94d";
+  content: "\f14d";
 }
 .solid-list-link:before {
-  content: "\e94e";
+  content: "\f14e";
 }
 .solid-map:before {
-  content: "\e94f";
+  content: "\f14f";
 }
 .solid-map-pin:before {
-  content: "\e950";
+  content: "\f150";
 }
 .solid-offer:before {
-  content: "\e951";
+  content: "\f151";
 }
 .solid-pin:before {
-  content: "\e952";
+  content: "\f152";
 }
 .solid-polygon:before {
-  content: "\e953";
+  content: "\f153";
 }
 .solid-report:before {
-  content: "\e954";
+  content: "\f154";
 }
 .solid-rocket:before {
-  content: "\e955";
+  content: "\f155";
 }
 .solid-save:before {
-  content: "\e956";
+  content: "\f156";
 }
 .solid-share-link:before {
-  content: "\e957";
+  content: "\f157";
 }
 .solid-star:before {
-  content: "\e958";
+  content: "\f158";
 }
 .solid-star-half:before {
-  content: "\e959";
+  content: "\f159";
 }
 .solid-trash:before {
-  content: "\e95a";
+  content: "\f15a";
 }
 .solid-universal-access:before {
-  content: "\e95b";
+  content: "\f15b";
 }
 .solid-user-circle:before {
-  content: "\e95c";
+  content: "\f15c";
 }
 .solid-user-rectangle:before {
-  content: "\e95d";
+  content: "\f15d";
 }
 .star:before {
-  content: "\e95e";
+  content: "\f15e";
 }
 .trash:before {
-  content: "\e95f";
+  content: "\f15f";
 }
 .trip:before {
-  content: "\e960";
+  content: "\f160";
 }
 .universal-access:before {
-  content: "\e961";
+  content: "\f161";
 }
 .user-circle:before {
-  content: "\e962";
+  content: "\f162";
 }
 .x:before {
-  content: "\e963";
+  content: "\f163";
 }
