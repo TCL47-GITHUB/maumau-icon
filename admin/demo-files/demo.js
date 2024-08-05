@@ -136,14 +136,14 @@ if (!("boxShadow" in document.body.style)) {
   
     // Danh sách icon mới
     var newIcons = [
-      "share-link",
-      "solid-share-link",
-      "list-link",
-      "solid-list-link",
-      "save",
-      "solid-save",
-      "solid-star-half",
-      "x",
+      "ad-share-link",
+      "ad-solid-share-link",
+      "ad-list-link",
+      "ad-solid-list-link",
+      "ad-save",
+      "ad-solid-save",
+      "ad-solid-star-half",
+      "ad-x",
     ];
   
     // Hiển thị icon mới trong modal
