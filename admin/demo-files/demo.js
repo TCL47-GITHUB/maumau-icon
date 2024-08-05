@@ -133,17 +133,17 @@ if (!("boxShadow" in document.body.style)) {
   function openModal() {
     var overlay = document.getElementById("overlay");
     overlay.style.display = "flex";
-  
+    let abc = 'adm';
     // Danh sách icon mới
     var newIcons = [
-      "ad-share-link",
-      "ad-solid-share-link",
-      "ad-list-link",
-      "ad-solid-list-link",
-      "ad-save",
-      "ad-solid-save",
-      "ad-solid-star-half",
-      "ad-x",
+      `${abc}-share-link`,
+      `${abc}-solid-share-link`,
+      `${abc}-list-link`,
+      `${abc}-solid-list-link`,
+      `${abc}-save`,
+      `${abc}-solid-save`,
+      `${abc}-solid-star-half`,
+      `${abc}-x`,
     ];
   
     // Hiển thị icon mới trong modal
