@@ -120,7 +120,7 @@ class="text-base rounded-l-none hover:scale-105 focus:outline-none flex justify-
 
 <div id="popup" class="popup">
 <div class="popup-content">
-<i class="close-btn mm-1 times"></i>
+<i class="close-btn mm-1 icon1-times"></i>
 <p
 class="text-gray-600 font-bold"
 style="
@@ -138,7 +138,7 @@ id="copy-btn"
 class="mt-3 text-base focus:outline-none flex justify-center px-4 py-2 rounded cursor-pointer bg-white text-teal-700 border border-teal-600"
 >
 <div class="flex leading-5 gap-1 item-center">
-  <i class="mm-1 copy"></i> Sao chép
+  <i class="mm-1 icon1-copy"></i> Sao chép
 </div>
 </button>
 </div>
@@ -159,7 +159,7 @@ style="
 >Icon mới</strong
 >
 <div class="icon-container" id="newIconContainer"></div>
-<i onclick="closeModal()" class="close-btn mm-1 times"></i>
+<i onclick="closeModal()" class="close-btn mm-1 icon1-times"></i>
 </div>
 </div>
 
