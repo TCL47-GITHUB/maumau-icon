@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-set1-maumau';
-  src:  url('fonts/font-icon-set1-maumau.eot?gbp4dp');
-  src:  url('fonts/font-icon-set1-maumau.eot?gbp4dp#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-set1-maumau.ttf?gbp4dp') format('truetype'),
-    url('fonts/font-icon-set1-maumau.woff?gbp4dp') format('woff'),
-    url('fonts/font-icon-set1-maumau.svg?gbp4dp#font-icon-set1-maumau') format('svg');
+  src:  url('fonts/font-icon-set1-maumau.eot?l9l0c2');
+  src:  url('fonts/font-icon-set1-maumau.eot?l9l0c2#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-set1-maumau.ttf?l9l0c2') format('truetype'),
+    url('fonts/font-icon-set1-maumau.woff?l9l0c2') format('woff'),
+    url('fonts/font-icon-set1-maumau.svg?l9l0c2#font-icon-set1-maumau') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -244,16 +244,16 @@
 .icon1-chef:before {
   content: "\a148";
 }
-.icon1-chevron-down1:before {
+.icon1-chevron-down:before {
   content: "\a149";
 }
-.icon1-chevron-left1:before {
+.icon1-chevron-left:before {
   content: "\a14a";
 }
-.icon1-chevron-right1:before {
+.icon1-chevron-right:before {
   content: "\a14b";
 }
-.icon1-chevron-up1:before {
+.icon1-chevron-up:before {
   content: "\a14c";
 }
 .icon1-chicken:before {
@@ -304,7 +304,7 @@
 .icon1-cooker:before {
   content: "\a15c";
 }
-.icon1-copy1:before {
+.icon1-copy:before {
   content: "\a15d";
 }
 .icon1-cosmetic-medicine:before {
@@ -526,7 +526,7 @@
 .icon1-height:before {
   content: "\a1a6";
 }
-.icon1-help-circle1:before {
+.icon1-help-circle:before {
   content: "\a1a7";
 }
 .icon1-help-the-chef:before {
@@ -547,7 +547,7 @@
 .icon1-housekeeper:before {
   content: "\a1ad";
 }
-.icon1-image1:before {
+.icon1-image:before {
   content: "\a1ae";
 }
 .icon1-image-circle:before {
@@ -583,7 +583,7 @@
 .icon1-laptop:before {
   content: "\a1b9";
 }
-.icon1-link1:before {
+.icon1-link:before {
   content: "\a1ba";
 }
 .icon1-linkedin:before {
@@ -607,7 +607,7 @@
 .icon1-locked:before {
   content: "\a1c1";
 }
-.icon1-log-out1:before {
+.icon1-log-out:before {
   content: "\a1c2";
 }
 .icon1-luggage:before {
@@ -745,10 +745,10 @@
 .icon1-pinterest:before {
   content: "\a1ef";
 }
-.icon1-plus1:before {
+.icon1-plus:before {
   content: "\a1f0";
 }
-.icon1-plus-circle1:before {
+.icon1-plus-circle:before {
   content: "\a1f1";
 }
 .icon1-post-add:before {
@@ -787,7 +787,7 @@
 .icon1-road:before {
   content: "\a1fd";
 }
-.icon1-rocket1:before {
+.icon1-rocket:before {
   content: "\a1fe";
 }
 .icon1-rocketbook:before {
@@ -796,7 +796,7 @@
 .icon1-safe:before {
   content: "\a200";
 }
-.icon1-save1:before {
+.icon1-save:before {
   content: "\a201";
 }
 .icon1-scooter:before {
@@ -808,7 +808,7 @@
 .icon1-screen-size:before {
   content: "\a204";
 }
-.icon1-search1:before {
+.icon1-search:before {
   content: "\a205";
 }
 .icon1-secretary:before {
@@ -952,7 +952,7 @@
 .icon1-solid-cooker:before {
   content: "\a234";
 }
-.icon1-solid-copy1:before {
+.icon1-solid-copy:before {
   content: "\a235";
 }
 .icon1-solid-database:before {
@@ -1018,7 +1018,7 @@
 .icon1-solid-makeup:before {
   content: "\a24a";
 }
-.icon1-solid-map1:before {
+.icon1-solid-map:before {
   content: "\a24b";
 }
 .icon1-solid-mother-baby:before {
@@ -1054,7 +1054,7 @@
 .icon1-solid-social:before {
   content: "\a256";
 }
-.icon1-solid-star1:before {
+.icon1-solid-star:before {
   content: "\a257";
 }
 .icon1-solid-stationery:before {
@@ -1069,7 +1069,7 @@
 .icon1-solid-tag-1:before {
   content: "\a25b";
 }
-.icon1-solid-trash1:before {
+.icon1-solid-trash:before {
   content: "\a25c";
 }
 .icon1-solid-vest:before {
@@ -1102,7 +1102,7 @@
 .icon1-square:before {
   content: "\a266";
 }
-.icon1-star1:before {
+.icon1-star:before {
   content: "\a267";
 }
 .icon1-stationery:before {
@@ -1168,7 +1168,7 @@
 .icon1-toy-car:before {
   content: "\a27c";
 }
-.icon1-trash1:before {
+.icon1-trash:before {
   content: "\a27d";
 }
 .icon1-treadmill:before {
@@ -1195,7 +1195,7 @@
 .icon1-user-2:before {
   content: "\a285";
 }
-.icon1-user-circle1:before {
+.icon1-user-circle:before {
   content: "\a286";
 }
 .icon1-user-plus:before {
