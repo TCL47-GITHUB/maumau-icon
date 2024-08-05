@@ -111,7 +111,7 @@ class="text-base rounded-l-none hover:scale-105 focus:outline-none flex justify-
 </div>
 
 <h1 class="mhmm mvm">
-<span class="fgc1">Font Name:</span> font-icon-admin-mm
+<span class="fgc1">Font Name:</span> font-icon-mm
 <small class="fgc1"><span id="totalIconCount"></span></small>
 </h1>
 
@@ -138,7 +138,7 @@ id="copy-btn"
 class="mt-3 text-base focus:outline-none flex justify-center px-4 py-2 rounded cursor-pointer bg-white text-teal-700 border border-teal-600"
 >
 <div class="flex leading-5 gap-1 item-center">
-  <i class="ad-mm mm-1 copy"></i> Sao chép
+  <i class="mm-1 copy"></i> Sao chép
 </div>
 </button>
 </div>
