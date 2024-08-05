@@ -134,7 +134,7 @@ function openModal() {
   overlay.style.display = "flex";
 
   // Danh sách icon mới
-  var newIcons = ["fullscreen", "fullscreen-1", "bell", "solid-bell", "home", "solid-home", "tour-guide", "technicians"];
+  var newIcons = ["icon1-fullscreen", "icon1-fullscreen-1", "icon1-bell", "icon1-solid-bell", "icon1-home", "icon1-solid-home", "icon1-tour-guide", "icon1-technicians"];
 
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
