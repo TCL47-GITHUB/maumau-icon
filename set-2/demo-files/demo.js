@@ -134,7 +134,7 @@ function openModal() {
   overlay.style.display = "flex";
 
   // Danh sách icon mới
-  var newIcons = ["electric-post", "main-road", "hight-way", "road-3"];
+  var newIcons = ["icon2-electric-post", "icon2-main-road", "icon2-hight-way", "icon2-road-3"];
 
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
@@ -190,7 +190,7 @@ async function displayFileContent() {
     const text = await response.text();
     fileContent.textContent = text;
 
-    // Count the occurrences of "icon-mm"
+    // Count the occurrences of "mm-2"
     const iconCountMatch = text.match(/mm-2/g);
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
