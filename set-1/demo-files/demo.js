@@ -175,7 +175,8 @@ window.onload = function () {
   openModal();
 };
 
-// Get elements
+
+// Get elements  iconData button
 const popup = document.getElementById("popup");
 const openPopupBtn = document.getElementById("open-popup");
 const closeBtn = document.getElementsByClassName("close-btn")[0];
@@ -186,7 +187,7 @@ const iconCount = document.getElementById("icon-count");
 // Function to fetch and display the file content
 async function displayFileContent() {
   try {
-    const response = await fetch("iconData-1.txt");
+    const response = await fetch("iconData.txt");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
