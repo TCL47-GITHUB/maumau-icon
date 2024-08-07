@@ -32,13 +32,13 @@ if (!("boxShadow" in document.body.style)) {
     updateSize();
   })();
   // Total icon
-  function countTotalIcon() {
-    var iconElements = document.querySelectorAll(".mls");
-    var totalCount = iconElements.length;
+  // function countTotalIcon() {
+  //   var iconElements = document.querySelectorAll(".mls");
+  //   var totalCount = iconElements.length;
   
-    var totalIconCountElement = document.getElementById("totalIconCount");
-    totalIconCountElement.innerHTML = "(Icons: " + totalCount + ")";
-  }
+  //   var totalIconCountElement = document.getElementById("totalIconCount");
+  //   totalIconCountElement.innerHTML = "(Icons: " + totalCount + ")";
+  // }
   
   //Live Search
   function searchIconByName(iconName) {
@@ -183,7 +183,6 @@ if (!("boxShadow" in document.body.style)) {
   });
   
   window.onload = function () {
-    countTotalIcon();
     openModal();
   };
   
@@ -198,7 +197,7 @@ if (!("boxShadow" in document.body.style)) {
   // Function to fetch and display the file content
   async function displayFileContent() {
     try {
-      const response = await fetch("iconData.txt");
+      const response = await fetch("iconData-1.txt");
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -249,3 +248,66 @@ if (!("boxShadow" in document.body.style)) {
       popup.style.display = "none";
     }
   });
+
+
+
+  
+// read iconData
+fetch("iconData-1.txt")
+.then((response) => response.text())
+.then((data) => {
+  // Xử lý dữ liệu từ file iconData.txt
+  const iconDataText = data.replace("export default", "");
+  const iconData = eval(iconDataText);
+
+  const container = document.getElementById("icon-container");
+
+  iconData.forEach((icon) => {
+    const glyphDiv = document.createElement("div");
+    glyphDiv.classList.add("glyph", "fs1");
+
+    const iconDiv = document.createElement("div");
+    iconDiv.classList.add("clearfix", "bshadow0", "pbs");
+
+    const iconElement = document.createElement("i");
+    icon.code.split(" ").forEach((cls) => iconElement.classList.add(cls));
+    iconDiv.appendChild(iconElement);
+
+    const spanElement = document.createElement("span");
+    spanElement.classList.add("mls");
+    spanElement.textContent = icon.code;
+    iconDiv.appendChild(spanElement);
+
+    glyphDiv.appendChild(iconDiv);
+
+    const fieldset = document.createElement("fieldset");
+    fieldset.classList.add("fs0", "size1of1", "clearfix", "hidden-false");
+
+    const input = document.createElement("input");
+    input.type = "text";
+    input.readOnly = true;
+    input.value = icon.content;
+    input.classList.add("unit", "size1of2");
+    fieldset.appendChild(input);
+
+    glyphDiv.appendChild(fieldset);
+
+    container.appendChild(glyphDiv);
+  });
+  // Hiển thị số lượng icon
+  const iconCountDiv = document.getElementById("totalIconCount");
+  iconCountDiv.textContent = `Icon: ${iconData.length}`;
+})
+.catch((error) => console.error("Error fetching iconData:", error));
+
+// Event listeners
+openPopupBtn.addEventListener("click", openPopup);
+closeBtn.addEventListener("click", closePopup);
+copyBtn.addEventListener("click", copyContent);
+
+// Close the popup if the user clicks outside of the popup content
+window.addEventListener("click", function (event) {
+if (event.target == popup) {
+  popup.style.display = "none";
+}
+});
