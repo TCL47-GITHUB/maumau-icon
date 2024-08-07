@@ -10,6 +10,7 @@ document.body.addEventListener("click", function (e) {
     target.getAttribute("class").indexOf("liga") === -1
   ) {
     target.select();
+    
   }
 });
 
@@ -63,21 +64,21 @@ document.addEventListener("click", function (event) {
 
   // Kiểm tra xem phần tử được click có class mls hay không
   if (target.classList.contains("mls")) {
-    if(copyIcon()==1){
-        copyIconName1(target.textContent.trim());
-    }else if(copyIcon()==2){
-        copyIconName2(target.textContent.trim());
+    if (copyIcon() == 1) {
+      copyIconName1(target.textContent.trim());
+    } else if (copyIcon() == 2) {
+      copyIconName2(target.textContent.trim());
     }
-
   }
 });
 
+
+var prefix = "mm-2 ";
 function copyIconName1(iconName) {
-  var prefix = "";
 
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = '<i class="' + prefix + iconName + '"></i>';
+  tempInput.value = '<i class="' + iconName + '"></i>';
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -85,10 +86,10 @@ function copyIconName1(iconName) {
 
   // Hiển thị toast
   var toastContainer = document.getElementById("toastContainer");
-//   toastContainer.innerHTML =
-//     "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
+  //   toastContainer.innerHTML =
+  //     "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
   toastContainer.innerText =
-    "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
+    "Đã copy: " + '<i class="' + iconName + '"></i>';
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -97,52 +98,43 @@ function copyIconName1(iconName) {
 }
 
 function copyIconName2(iconName) {
-    var prefix = "";
-  
-    // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
-    var tempInput = document.createElement("input");
-    tempInput.value =  prefix + iconName;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-  
-    // Hiển thị toast
-    var toastContainer = document.getElementById("toastContainer");
-    // toastContainer.innerHTML =
-    //   "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
-    toastContainer.innerText =
-      "Đã copy: " + prefix + iconName;
-    toastContainer.classList.add("show");
-  
-    setTimeout(function () {
-      toastContainer.classList.remove("show");
-    }, 4000);
-  }
+
+  // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
+  var tempInput = document.createElement("input");
+  tempInput.value = + iconName;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+
+  // Hiển thị toast
+  var toastContainer = document.getElementById("toastContainer");
+  // toastContainer.innerHTML =
+  //   "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
+  toastContainer.innerText = "Đã copy: " + iconName;
+  toastContainer.classList.add("show");
+
+  setTimeout(function () {
+    toastContainer.classList.remove("show");
+  }, 4000);
+}
 function copyIcon() {
-    var selectedFunction = document.getElementById('copyFunctionSelect').value;
-    
-    if (selectedFunction === 'copyIconName1') {
-        return 1;
-    } else if (selectedFunction === 'copyIconName2') {
-        return 2;
-    }
+  var selectedFunction = document.getElementById("copyFunctionSelect").value;
+
+  if (selectedFunction === "copyIconName1") {
+    return 1;
+  } else if (selectedFunction === "copyIconName2") {
+    return 2;
+  }
 }
 
 // Mở modal và hiển thị danh sách icon mới
 function openModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
-  let abc = 'icon-tgic-';
+
   // Danh sách icon mới
-  var newIcons = [
-    `${abc}twitter-new`,
-    `${abc}filter`,
-    `${abc}pcb-assembly`,
-    `${abc}pcb-instant`,
-    `${abc}pending-task`,
-    `${abc}rohs`,
-  ];
+  var newIcons = ["icon2-electric-post", "icon2-main-road", "icon2-hight-way", "icon2-road-3"];
 
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
@@ -152,18 +144,13 @@ function openModal() {
     var iconElement = document.createElement("div");
     iconElement.className = "new-icon";
     iconElement.innerHTML =
-      '<i class="ad-tgic ' +
-      
-      iconClass +
-      '"></i>' +
-      "<p>" +
-      iconClass +
+      '<i class="' + prefix + iconClass +'"></i>' + "<p>" + prefix + iconClass +
       "</p>";
-      if(copyIcon()==1){
-        iconElement.setAttribute("onclick", 'copyIconName1("' + iconClass + '")');
-    }else if(copyIcon()==2){
-        iconElement.setAttribute("onclick", 'copyIconName2("' + iconClass + '")');
-    } 
+    if (copyIcon() == 1) {
+      iconElement.setAttribute("onclick", 'copyIconName1("' + prefix + iconClass + '")');
+    } else if (copyIcon() == 2) {
+      iconElement.setAttribute("onclick", 'copyIconName2("' + prefix + iconClass + '")');
+    }
     newIconContainer.appendChild(iconElement);
   });
 }
@@ -203,8 +190,8 @@ async function displayFileContent() {
     const text = await response.text();
     fileContent.textContent = text;
 
-    // Count the occurrences of "ad-tgic"
-    const iconCountMatch = text.match(/icon-tgic/g);
+    // Count the occurrences of "mm-2"
+    const iconCountMatch = text.match(/mm-2/g);
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
