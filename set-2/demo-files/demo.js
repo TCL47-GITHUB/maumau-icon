@@ -78,7 +78,7 @@ function copyIconName1(iconName) {
 
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = '<i class="' + prefix + iconName + '"></i>';
+  tempInput.value = '<i class="' + iconName + '"></i>';
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -89,7 +89,7 @@ function copyIconName1(iconName) {
   //   toastContainer.innerHTML =
   //     "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
   toastContainer.innerText =
-    "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
+    "Đã copy: " + '<i class="' + iconName + '"></i>';
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -101,7 +101,7 @@ function copyIconName2(iconName) {
 
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = prefix + iconName;
+  tempInput.value = + iconName;
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -111,7 +111,7 @@ function copyIconName2(iconName) {
   var toastContainer = document.getElementById("toastContainer");
   // toastContainer.innerHTML =
   //   "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
-  toastContainer.innerText = "Đã copy: " + prefix + iconName;
+  toastContainer.innerText = "Đã copy: " + iconName;
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -144,12 +144,12 @@ function openModal() {
     var iconElement = document.createElement("div");
     iconElement.className = "new-icon";
     iconElement.innerHTML =
-      '<i class="' + prefix + iconClass +'"></i>' + "<p>" + iconClass +
+      '<i class="' + prefix + iconClass +'"></i>' + "<p>" + prefix + iconClass +
       "</p>";
     if (copyIcon() == 1) {
-      iconElement.setAttribute("onclick", 'copyIconName1("' + iconClass + '")');
+      iconElement.setAttribute("onclick", 'copyIconName1("' + prefix + iconClass + '")');
     } else if (copyIcon() == 2) {
-      iconElement.setAttribute("onclick", 'copyIconName2("' + iconClass + '")');
+      iconElement.setAttribute("onclick", 'copyIconName2("' + prefix + iconClass + '")');
     }
     newIconContainer.appendChild(iconElement);
   });
@@ -183,7 +183,7 @@ const iconCount = document.getElementById("icon-count");
 // Function to fetch and display the file content
 async function displayFileContent() {
   try {
-    const response = await fetch("iconData.txt");
+    const response = await fetch("iconData-1.txt");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -237,7 +237,7 @@ window.addEventListener("click", function (event) {
 
 
 // read iconData
-fetch('iconData.txt')
+fetch('iconData-1.txt')
     .then(response => response.text())
     .then(data => {
         // Xử lý dữ liệu từ file iconData.txt
