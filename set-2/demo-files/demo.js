@@ -10,7 +10,6 @@ document.body.addEventListener("click", function (e) {
     target.getAttribute("class").indexOf("liga") === -1
   ) {
     target.select();
-    
   }
 });
 
@@ -33,13 +32,13 @@ document.body.addEventListener("click", function (e) {
   updateSize();
 })();
 // Total icon
-function countTotalIcon() {
-  var iconElements = document.querySelectorAll(".mls");
-  var totalCount = iconElements.length;
+// function countTotalIcon() {
+//   var iconElements = document.querySelectorAll(".mls");
+//   var totalCount = iconElements.length;
 
-  var totalIconCountElement = document.getElementById("totalIconCount");
-  totalIconCountElement.innerHTML = "(Icons: " + totalCount + ")";
-}
+//   var totalIconCountElement = document.getElementById("totalIconCount");
+//   totalIconCountElement.innerHTML = "(Icons: " + totalCount + ")";
+// }
 
 //Live Search
 function searchIconByName(iconName) {
@@ -72,10 +71,8 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
 var prefix = "mm-2 ";
 function copyIconName1(iconName) {
-
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
   tempInput.value = '<i class="' + iconName + '"></i>';
@@ -88,8 +85,7 @@ function copyIconName1(iconName) {
   var toastContainer = document.getElementById("toastContainer");
   //   toastContainer.innerHTML =
   //     "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
-  toastContainer.innerText =
-    "Đã copy: " + '<i class="' + iconName + '"></i>';
+  toastContainer.innerText = "Đã copy: " + '<i class="' + iconName + '"></i>';
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -98,10 +94,9 @@ function copyIconName1(iconName) {
 }
 
 function copyIconName2(iconName) {
-
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = + iconName;
+  tempInput.value = +iconName;
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -134,7 +129,12 @@ function openModal() {
   overlay.style.display = "flex";
 
   // Danh sách icon mới
-  var newIcons = ["icon2-electric-post", "icon2-main-road", "icon2-hight-way", "icon2-road-3"];
+  var newIcons = [
+    "icon2-electric-post",
+    "icon2-main-road",
+    "icon2-hight-way",
+    "icon2-road-3",
+  ];
 
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
@@ -144,12 +144,24 @@ function openModal() {
     var iconElement = document.createElement("div");
     iconElement.className = "new-icon";
     iconElement.innerHTML =
-      '<i class="' + prefix + iconClass +'"></i>' + "<p>" + prefix + iconClass +
+      '<i class="' +
+      prefix +
+      iconClass +
+      '"></i>' +
+      "<p>" +
+      prefix +
+      iconClass +
       "</p>";
     if (copyIcon() == 1) {
-      iconElement.setAttribute("onclick", 'copyIconName1("' + prefix + iconClass + '")');
+      iconElement.setAttribute(
+        "onclick",
+        'copyIconName1("' + prefix + iconClass + '")'
+      );
     } else if (copyIcon() == 2) {
-      iconElement.setAttribute("onclick", 'copyIconName2("' + prefix + iconClass + '")');
+      iconElement.setAttribute(
+        "onclick",
+        'copyIconName2("' + prefix + iconClass + '")'
+      );
     }
     newIconContainer.appendChild(iconElement);
   });
@@ -168,7 +180,6 @@ window.addEventListener("click", function (event) {
 });
 
 window.onload = function () {
-  countTotalIcon();
   openModal();
 };
 
@@ -183,7 +194,7 @@ const iconCount = document.getElementById("icon-count");
 // Function to fetch and display the file content
 async function displayFileContent() {
   try {
-    const response = await fetch("iconData.txt");
+    const response = await fetch("iconData-1.txt");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -235,48 +246,50 @@ window.addEventListener("click", function (event) {
   }
 });
 
-
 // read iconData
-fetch('iconData-1.txt')
-    .then(response => response.text())
-    .then(data => {
-        // Xử lý dữ liệu từ file iconData.txt
-        const iconDataText = data.replace('export default', '');
-        const iconData = eval(iconDataText);
+fetch("iconData-1.txt")
+  .then((response) => response.text())
+  .then((data) => {
+    // Xử lý dữ liệu từ file iconData.txt
+    const iconDataText = data.replace("export default", "");
+    const iconData = eval(iconDataText);
 
-        const container = document.getElementById('icon-container');
+    const container = document.getElementById("icon-container");
 
-        iconData.forEach(icon => {
-            const glyphDiv = document.createElement('div');
-            glyphDiv.classList.add('glyph', 'fs1');
+    iconData.forEach((icon) => {
+      const glyphDiv = document.createElement("div");
+      glyphDiv.classList.add("glyph", "fs1");
 
-            const iconDiv = document.createElement('div');
-            iconDiv.classList.add('clearfix', 'bshadow0', 'pbs');
+      const iconDiv = document.createElement("div");
+      iconDiv.classList.add("clearfix", "bshadow0", "pbs");
 
-            const iconElement = document.createElement('i');
-            icon.code.split(' ').forEach(cls => iconElement.classList.add(cls));
-            iconDiv.appendChild(iconElement);
+      const iconElement = document.createElement("i");
+      icon.code.split(" ").forEach((cls) => iconElement.classList.add(cls));
+      iconDiv.appendChild(iconElement);
 
-            const spanElement = document.createElement('span');
-            spanElement.classList.add('mls');
-            spanElement.textContent = icon.code;
-            iconDiv.appendChild(spanElement);
+      const spanElement = document.createElement("span");
+      spanElement.classList.add("mls");
+      spanElement.textContent = icon.code;
+      iconDiv.appendChild(spanElement);
 
-            glyphDiv.appendChild(iconDiv);
+      glyphDiv.appendChild(iconDiv);
 
-            const fieldset = document.createElement('fieldset');
-            fieldset.classList.add('fs0', 'size1of1', 'clearfix', 'hidden-false');
+      const fieldset = document.createElement("fieldset");
+      fieldset.classList.add("fs0", "size1of1", "clearfix", "hidden-false");
 
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.readOnly = true;
-            input.value = icon.content;
-            input.classList.add('unit', 'size1of2');
-            fieldset.appendChild(input);
+      const input = document.createElement("input");
+      input.type = "text";
+      input.readOnly = true;
+      input.value = icon.content;
+      input.classList.add("unit", "size1of2");
+      fieldset.appendChild(input);
 
-            glyphDiv.appendChild(fieldset);
+      glyphDiv.appendChild(fieldset);
 
-            container.appendChild(glyphDiv);
-        });
-    })
-    .catch(error => console.error('Error fetching iconData:', error));
+      container.appendChild(glyphDiv);
+    });
+    // Hiển thị số lượng icon
+    const iconCountDiv = document.getElementById("totalIconCount");
+    iconCountDiv.textContent = `Icon: ${iconData.length}`;
+  })
+  .catch((error) => console.error("Error fetching iconData:", error));
