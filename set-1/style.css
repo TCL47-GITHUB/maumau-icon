@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-set1-mm';
-  src:  url('fonts/font-icon-set1-mm.eot?yf5n24');
-  src:  url('fonts/font-icon-set1-mm.eot?yf5n24#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-set1-mm.ttf?yf5n24') format('truetype'),
-    url('fonts/font-icon-set1-mm.woff?yf5n24') format('woff'),
-    url('fonts/font-icon-set1-mm.svg?yf5n24#font-icon-set1-mm') format('svg');
+  src:  url('fonts/font-icon-set1-mm.eot?6vdoq4');
+  src:  url('fonts/font-icon-set1-mm.eot?6vdoq4#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-set1-mm.ttf?6vdoq4') format('truetype'),
+    url('fonts/font-icon-set1-mm.woff?6vdoq4') format('woff'),
+    url('fonts/font-icon-set1-mm.svg?6vdoq4#font-icon-set1-mm') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -138,6 +138,12 @@
 }
 .icon1-fire:before {
   content: "\a125";
+}
+.icon1-company:before {
+  content: "\e902";
+}
+.icon1-solid-company:before {
+  content: "\e903";
 }
 .icon1-building:before {
   content: "\a126";

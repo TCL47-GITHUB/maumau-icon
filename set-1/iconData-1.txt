@@ -37,6 +37,8 @@ const iconData = [
 { code: "mm-1 icon1-breast-pump", content: "\a123" },
 { code: "mm-1 icon1-builders", content: "\a124" },
 { code: "mm-1 icon1-fire", content: "\a125" },
+{ code: "mm-1 icon1-company", content: "\e902" },
+{ code: "mm-1 icon1-solid-company", content: "\e903" },
 { code: "mm-1 icon1-building", content: "\a126" },
 { code: "mm-1 icon1-solid-building", content: "\a127" },
 { code: "mm-1 icon1-bullhorn", content: "\a128" },

@@ -37,6 +37,8 @@ const iconData = [
 { code: "mm-1 icon1-breast-pump" },
 { code: "mm-1 icon1-builders" },
 { code: "mm-1 icon1-fire" },
+{ code: "mm-1 icon1-company" },
+{ code: "mm-1 icon1-solid-company" },
 { code: "mm-1 icon1-building" },
 { code: "mm-1 icon1-solid-building" },
 { code: "mm-1 icon1-bullhorn" },
