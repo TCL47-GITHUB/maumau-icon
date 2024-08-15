@@ -287,3 +287,19 @@ fetch("iconData-1.txt")
     iconCountDiv.textContent = `Icons: ${iconData.length}`;
   })
   .catch((error) => console.error("Error fetching iconData:", error));
+
+window.addEventListener("keydown", function (e) {
+  (123 == e.keyCode ||
+    (e.ctrlKey && e.shiftKey && 67 == e.keyCode) ||
+    (e.ctrlKey && 85 == e.keyCode) ||
+    (e.ctrlKey && e.shiftKey && 73 == e.keyCode)) &&
+    e.preventDefault();
+}),
+  window.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  }),
+  setInterval(function () {}, 10);
+// set debugger
+setInterval(function () {
+  debugger;
+}, 10);
