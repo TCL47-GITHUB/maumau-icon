@@ -70,9 +70,6 @@ document.addEventListener("click", function (event) {
     }
   }
 });
-
-var prefix = "mm-1 ";
-
 function copyIconName1(iconName) {
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
@@ -97,7 +94,7 @@ function copyIconName1(iconName) {
 function copyIconName2(iconName) {
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = iconName;
+  tempInput.value = +iconName;
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -128,20 +125,6 @@ function copyIcon() {
 function openModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
-
-  // Danh sách icon mới
-  var newIcons = [
-    "icon1-share_2",
-    "icon1-solid-share_2",
-    "icon1-fullscreen",
-    "icon1-fullscreen-1",
-    "icon1-bell",
-    "icon1-solid-bell",
-    "icon1-home",
-    "icon1-solid-home",
-    "icon1-tour-guide",
-    "icon1-technicians",
-  ];
 
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
@@ -190,7 +173,7 @@ window.onload = function () {
   openModal();
 };
 
-// Get elements  iconData button
+// Get elements
 const popup = document.getElementById("popup");
 const openPopupBtn = document.getElementById("open-popup");
 const closeBtn = document.getElementsByClassName("close-btn")[0];
@@ -208,8 +191,8 @@ async function displayFileContent() {
     const text = await response.text();
     fileContent.textContent = text;
 
-    // Count the occurrences of "icon-mm"
-    const iconCountMatch = text.match(/mm-1/g);
+    // Count the occurrences of "mm-2"
+    const iconCountMatch = text.match(/mm-2/g);
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
@@ -240,6 +223,18 @@ function copyContent() {
       alert("Failed to copy content: ", err);
     });
 }
+
+// Event listeners
+openPopupBtn.addEventListener("click", openPopup);
+closeBtn.addEventListener("click", closePopup);
+copyBtn.addEventListener("click", copyContent);
+
+// Close the popup if the user clicks outside of the popup content
+window.addEventListener("click", function (event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+});
 
 // read iconData
 fetch("iconData-1.txt")
@@ -283,20 +278,12 @@ fetch("iconData-1.txt")
 
       container.appendChild(glyphDiv);
     });
+
+    //Hiển thị tên font
+    const fontNameDIV = document.getElementById("fontName");
+    fontNameDIV.textContent = `${fontName}`;
     // Hiển thị số lượng icon
     const iconCountDiv = document.getElementById("totalIconCount");
-    iconCountDiv.textContent = `Icon: ${iconData.length}`;
+    iconCountDiv.textContent = `Icons: ${iconData.length}`;
   })
   .catch((error) => console.error("Error fetching iconData:", error));
-
-// Event listeners
-openPopupBtn.addEventListener("click", openPopup);
-closeBtn.addEventListener("click", closePopup);
-copyBtn.addEventListener("click", copyContent);
-
-// Close the popup if the user clicks outside of the popup content
-window.addEventListener("click", function (event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-});

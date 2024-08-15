@@ -111,7 +111,7 @@ class="text-base rounded-l-none hover:scale-105 focus:outline-none flex justify-
 </div>
 
 <h1 class="mhmm mvm">
-<span class="fgc1">Font Name:</span> font-icon-mm
+<span class="fgc1">Font name:</span> <span id="fontName"></span>
 <small class="fgc1"><span id="totalIconCount"></span></small>
 </h1>
 
