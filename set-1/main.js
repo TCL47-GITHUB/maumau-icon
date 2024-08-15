@@ -1,5 +1,5 @@
 // Danh sách icon mới
-// var fontName = "maumau-set-1";
+var fontName = "maumau-set-1";
 
 var prefix = "mm-1 ";
 

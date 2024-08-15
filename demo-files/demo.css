@@ -87,12 +87,6 @@ a.logo {
 	line-height: 100%;
 }
 
-@media only screen and (max-width: 680px) {
-	a.logo {
-		display: none
-	}
-}
-
 a:hover,
 a:focus {
 	/*box-shadow: 0 1px #e74c3c;*/
@@ -182,30 +176,8 @@ input:focus {
 
 .bgc1 {
 	background: #003a70;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: sticky;
-	top: 0;
-	padding: .5rem 2rem;
-	gap: 2rem;
 	z-index: 333;
 	color: #9fa4b1
-}
-
-@media only screen and (max-width: 768px) {
-	.bgc1 {
-		padding: .5rem 1rem;
-		gap: 1rem
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.bgc1 {
-		flex-direction: column-reverse;
-		padding: 0.25rem 1rem 0.625rem 1rem;
-		gap: 0.25rem;
-	}
 }
 
 .fgc1 {
