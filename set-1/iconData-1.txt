@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "mm-1 icon1-solid-gender", content: "\e900" },
+{ code: "mm-1 icon1-gender", content: "\a10a" },
 { code: "mm-1 icon1-graduate-1", content: "\a100" },
 { code: "mm-1 icon1-solid-graduate-1", content: "\a101" },
 { code: "mm-1 icon1-mail", content: "\a102" },
@@ -9,7 +11,6 @@ const iconData = [
 { code: "mm-1 icon1-solid-interview", content: "\a107" },
 { code: "mm-1 icon1-experience", content: "\a108" },
 { code: "mm-1 icon1-solid-experience", content: "\a109" },
-{ code: "mm-1 icon1-gender", content: "\a10a" },
 { code: "mm-1 icon1-graduate", content: "\a10b" },
 { code: "mm-1 icon1-interest", content: "\a10c" },
 { code: "mm-1 icon1-solid-interest", content: "\a10d" },

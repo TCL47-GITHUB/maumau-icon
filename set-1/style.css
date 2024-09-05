@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'font-icon-set1-mm';
-  src:  url('fonts/font-icon-set1-mm.eot?xwjh6j');
-  src:  url('fonts/font-icon-set1-mm.eot?xwjh6j#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-set1-mm.ttf?xwjh6j') format('truetype'),
-    url('fonts/font-icon-set1-mm.woff?xwjh6j') format('woff'),
-    url('fonts/font-icon-set1-mm.svg?xwjh6j#font-icon-set1-mm') format('svg');
+  src:  url('fonts/font-icon-set1-mm.eot?79lctj');
+  src:  url('fonts/font-icon-set1-mm.eot?79lctj#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-set1-mm.ttf?79lctj') format('truetype'),
+    url('fonts/font-icon-set1-mm.woff?79lctj') format('woff'),
+    url('fonts/font-icon-set1-mm.svg?79lctj#font-icon-set1-mm') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.mm-1 {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'font-icon-set1-mm' !important;
   speak: never;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon1-solid-gender:before {
+  content: "\e900";
+}
+.icon1-gender:before {
+  content: "\a10a";
+}
 .icon1-graduate-1:before {
   content: "\a100";
 }
@@ -54,9 +60,6 @@
 }
 .icon1-solid-experience:before {
   content: "\a109";
-}
-.icon1-gender:before {
-  content: "\a10a";
 }
 .icon1-graduate:before {
   content: "\a10b";

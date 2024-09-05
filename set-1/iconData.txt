@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "mm-1 icon1-solid-gender" },
+{ code: "mm-1 icon1-gender" },
 { code: "mm-1 icon1-graduate-1" },
 { code: "mm-1 icon1-solid-graduate-1" },
 { code: "mm-1 icon1-mail" },
@@ -9,7 +11,6 @@ const iconData = [
 { code: "mm-1 icon1-solid-interview" },
 { code: "mm-1 icon1-experience" },
 { code: "mm-1 icon1-solid-experience" },
-{ code: "mm-1 icon1-gender" },
 { code: "mm-1 icon1-graduate" },
 { code: "mm-1 icon1-interest" },
 { code: "mm-1 icon1-solid-interest" },
