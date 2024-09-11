@@ -5,6 +5,10 @@ var prefix = "mm-1 ";
 
 // Danh sách icon mới
 var newIcons = [
+  "icon1-avatar-woman",
+  "icon1-solid-avatar-woman",
+  "icon1-avatar-man",
+  "icon1-solid-avatar-man",
   "icon1-solid-gender",
   "icon1-gender",
   "icon1-graduate-1",

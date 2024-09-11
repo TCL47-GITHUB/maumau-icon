@@ -1,4 +1,8 @@
 const iconData = [
+{ code: "mm-1 icon1-avatar-woman" },
+{ code: "mm-1 icon1-solid-avatar-woman" },
+{ code: "mm-1 icon1-avatar-man" },
+{ code: "mm-1 icon1-solid-avatar-man" },
 { code: "mm-1 icon1-solid-gender" },
 { code: "mm-1 icon1-gender" },
 { code: "mm-1 icon1-graduate-1" },
