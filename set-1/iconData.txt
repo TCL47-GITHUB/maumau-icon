@@ -1,4 +1,10 @@
 const iconData = [
+{ code: "mm-1 icon1-resume-1" },
+{ code: "mm-1 icon1-solid-resume-1" },
+{ code: "mm-1 icon1-resume" },
+{ code: "mm-1 icon1-solid-resume" },
+{ code: "mm-1 icon1-resume-2" },
+{ code: "mm-1 icon1-solid-resume-2" },
 { code: "mm-1 icon1-avatar-woman" },
 { code: "mm-1 icon1-solid-avatar-woman" },
 { code: "mm-1 icon1-avatar-man" },

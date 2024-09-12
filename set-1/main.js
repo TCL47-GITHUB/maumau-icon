@@ -5,6 +5,12 @@ var prefix = "mm-1 ";
 
 // Danh sách icon mới
 var newIcons = [
+  "icon1-resume-1",
+  "icon1-solid-resume-1",
+  "icon1-resume",
+  "icon1-solid-resume",
+  "icon1-resume-2",
+  "icon1-solid-resume-2",
   "icon1-avatar-woman",
   "icon1-solid-avatar-woman",
   "icon1-avatar-man",
