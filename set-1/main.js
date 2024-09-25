@@ -5,6 +5,7 @@ var prefix = "mm-1 ";
 
 // Danh sách icon mới
 var newIcons = [
+  "icon1-logo-sm",
   "icon1-resume-1",
   "icon1-solid-resume-1",
   "icon1-resume",
