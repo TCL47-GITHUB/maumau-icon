@@ -1,4 +1,5 @@
 const iconData = [
+{ code: "mm-1 icon1-logo-sm" },
 { code: "mm-1 icon1-resume-1" },
 { code: "mm-1 icon1-solid-resume-1" },
 { code: "mm-1 icon1-resume" },
