@@ -166,11 +166,11 @@ const closeBtn = document.getElementsByClassName("close-btn")[0];
 const fileContent = document.getElementById("file-content");
 const copyBtn = document.getElementById("copy-btn");
 const iconCount = document.getElementById("icon-count");
-
+/*
 // Function to fetch and display the file content
 async function displayFileContent() {
   try {
-    const response = await fetch("iconData-1.txt");
+    const response = await fetch("set-1/iconData-1.txt");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -186,6 +186,7 @@ async function displayFileContent() {
     fileContent.textContent = `Error: ${error.message}`;
   }
 }
+  */
 
 // Function to open the popup
 function openPopup() {
