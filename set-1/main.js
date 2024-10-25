@@ -4,6 +4,31 @@ var fontName = "maumau-set-1";
 var prefix = "mm-1 ";
 // Danh sách icon mới
 var newIcons = [
+  "icon1-clothing",
+  "icon1-solid-clothing",
+  "icon1-costume",
+  "icon1-solid-costume",
+  "icon1-dress",
+  "icon1-solid-dress",
+  "icon1-jeans",
+  "icon1-solid-jeans",
+  "icon1-shirt",
+  "icon1-solid-shirt",
+  "icon1-shorts",
+  "icon1-solid-shorts",
+  "icon1-socks",
+  "icon1-solid-socks",
+  "icon1-clothing-1",
+  "icon1-solid-clothing-1",
+  "icon1-fabric",
+  "icon1-solid-fabric",
+  "icon1-wedding-dress",
+  "icon1-solid-wedding-dress",
+  "icon1-womens-fashion",
+  "icon1-solid-womens-fashion",
+  "icon1-sweater",
+  "icon1-solid-sweater",
+  "icon1-tiktok",
   "icon1-sync-thin",
   "icon1-sync-user",
   "icon1-logo-sm",
@@ -93,8 +118,7 @@ fetch("set-1/iconData-1.txt")
   })
   .catch((error) => console.error("Error fetching iconData:", error));
 
-
-  // Function to fetch and display the file content Icon data
+// Function to fetch and display the file content Icon data
 async function displayFileContent() {
   try {
     const response = await fetch("set-1/iconData-1.txt");
@@ -106,12 +130,10 @@ async function displayFileContent() {
 
     // Count the occurrences of "ad-tgic"
     // const iconCountMatch = text.match(/ad-mm/g);
-    const iconCountMatch = text.match(new RegExp(`${prefix}`, 'g'));
+    const iconCountMatch = text.match(new RegExp(`${prefix}`, "g"));
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
     fileContent.textContent = `Error: ${error.message}`;
   }
 }
-
-
