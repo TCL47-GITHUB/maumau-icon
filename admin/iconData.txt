@@ -1,4 +1,12 @@
 const iconData = [
+{ code: "ad-mm adm-calendar" },
+{ code: "ad-mm adm-calendar-1" },
+{ code: "ad-mm adm-page-setting" },
+{ code: "ad-mm adm-post-setting" },
+{ code: "ad-mm adm-solid-page-setting" },
+{ code: "ad-mm adm-solid-post-setting" },
+{ code: "ad-mm adm-solid-tag" },
+{ code: "ad-mm adm-tag" },
 { code: "ad-mm adm-aperture" },
 { code: "ad-mm adm-bar-chart-square" },
 { code: "ad-mm adm-book-content" },

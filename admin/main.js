@@ -6,6 +6,14 @@ var prefix = "ad-mm ";
 let abc = "adm";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}-calendar`,
+  `${abc}-calendar-1`,
+  `${abc}-page-setting`,
+  `${abc}-post-setting`,
+  `${abc}-solid-page-setting`,
+  `${abc}-solid-post-setting`,
+  `${abc}-solid-tag`,
+  `${abc}-tag`,
   `${abc}-share-link`,
   `${abc}-solid-share-link`,
   `${abc}-list-link`,
@@ -67,7 +75,7 @@ fetch("admin/iconData-1.txt")
   })
   .catch((error) => console.error("Error fetching iconData:", error));
 
-    // Function to fetch and display the file content Icon data
+// Function to fetch and display the file content Icon data
 async function displayFileContent() {
   try {
     const response = await fetch("admin/iconData-1.txt");
@@ -79,7 +87,7 @@ async function displayFileContent() {
 
     // Count the occurrences of "ad-tgic"
     // const iconCountMatch = text.match(/ad-mm/g);
-    const iconCountMatch = text.match(new RegExp(`${prefix}`, 'g'));
+    const iconCountMatch = text.match(new RegExp(`${prefix}`, "g"));
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
