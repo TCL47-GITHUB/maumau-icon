@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "mm-1 icon1-refresh", content: "\e900" },
+{ code: "mm-1 icon1-refresh-2", content: "\e901" },
 { code: "mm-1 icon1-add-cart-1", content: "\a100" },
 { code: "mm-1 icon1-add-cart-1-thin", content: "\a101" },
 { code: "mm-1 icon1-clothing", content: "\a102" },

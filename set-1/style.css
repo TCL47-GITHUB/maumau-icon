@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'font-icon-set1-maumau';
-  src:  url('fonts/font-icon-set1-maumau.eot?p9racm');
-  src:  url('fonts/font-icon-set1-maumau.eot?p9racm#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-set1-maumau.ttf?p9racm') format('truetype'),
-    url('fonts/font-icon-set1-maumau.woff?p9racm') format('woff'),
-    url('fonts/font-icon-set1-maumau.svg?p9racm#font-icon-set1-maumau') format('svg');
+  font-family: 'font-icon-set1-mm';
+  src:  url('fonts/font-icon-set1-mm.eot?ibvfui');
+  src:  url('fonts/font-icon-set1-mm.eot?ibvfui#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-set1-mm.ttf?ibvfui') format('truetype'),
+    url('fonts/font-icon-set1-mm.woff?ibvfui') format('woff'),
+    url('fonts/font-icon-set1-mm.svg?ibvfui#font-icon-set1-mm') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 .mm-1 {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'font-icon-set1-maumau' !important;
+  font-family: 'font-icon-set1-mm' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon1-refresh:before {
+  content: "\e900";
+}
+.icon1-refresh-2:before {
+  content: "\e901";
+}
 .icon1-add-cart-1:before {
   content: "\a100";
 }
