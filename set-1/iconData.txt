@@ -1,4 +1,9 @@
 const iconData = [
+{ code: "mm-1 icon1-real-estate" },
+{ code: "mm-1 icon1-real-estate-1" },
+{ code: "mm-1 icon1-real-estate-agency" },
+{ code: "mm-1 icon1-solid-camera-flycam" },
+{ code: "mm-1 icon1-camera-flycam" },
 { code: "mm-1 icon1-refresh" },
 { code: "mm-1 icon1-refresh-2" },
 { code: "mm-1 icon1-add-cart-1" },
