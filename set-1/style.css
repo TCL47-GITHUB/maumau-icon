@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-set1-mm';
-  src:  url('fonts/font-icon-set1-mm.eot?gncl7m');
-  src:  url('fonts/font-icon-set1-mm.eot?gncl7m#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-set1-mm.ttf?gncl7m') format('truetype'),
-    url('fonts/font-icon-set1-mm.woff?gncl7m') format('woff'),
-    url('fonts/font-icon-set1-mm.svg?gncl7m#font-icon-set1-mm') format('svg');
+  src:  url('fonts/font-icon-set1-mm.eot?1xxps5');
+  src:  url('fonts/font-icon-set1-mm.eot?1xxps5#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-set1-mm.ttf?1xxps5') format('truetype'),
+    url('fonts/font-icon-set1-mm.woff?1xxps5') format('woff'),
+    url('fonts/font-icon-set1-mm.svg?1xxps5#font-icon-set1-mm') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
