@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-set2-mm';
-  src:  url('fonts/font-icon-set2-mm.eot?vpbkhh');
-  src:  url('fonts/font-icon-set2-mm.eot?vpbkhh#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-set2-mm.ttf?vpbkhh') format('truetype'),
-    url('fonts/font-icon-set2-mm.woff?vpbkhh') format('woff'),
-    url('fonts/font-icon-set2-mm.svg?vpbkhh#font-icon-set2-mm') format('svg');
+  src:  url('fonts/font-icon-set2-mm.eot?qhw6c7');
+  src:  url('fonts/font-icon-set2-mm.eot?qhw6c7#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-set2-mm.ttf?qhw6c7') format('truetype'),
+    url('fonts/font-icon-set2-mm.woff?qhw6c7') format('woff'),
+    url('fonts/font-icon-set2-mm.svg?qhw6c7#font-icon-set2-mm') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,6 +36,9 @@
 }
 .icon2-solid-apartment:before {
   content: "\e903";
+}
+.icon2-company:before {
+  content: "\e93b";
 }
 .icon2-closet:before {
   content: "\e904";
@@ -118,6 +121,9 @@
 .icon2-solid-office-table-1:before {
   content: "\e91e";
 }
+.icon2-solid-table:before {
+  content: "\e924";
+}
 .icon2-pool:before {
   content: "\e91f";
 }
@@ -126,6 +132,9 @@
 }
 .icon2-solid-pool-1:before {
   content: "\e94b";
+}
+.icon2-children-play-area:before {
+  content: "\e92d";
 }
 .icon2-school:before {
   content: "\e921";
@@ -139,9 +148,6 @@
 .icon2-sollid-stadium:before {
   content: "\e94e";
 }
-.icon2-solid-table:before {
-  content: "\e924";
-}
 .icon2-theatre:before {
   content: "\e950";
 }
@@ -151,17 +157,26 @@
 .icon2-science:before {
   content: "\e925";
 }
-.icon2-solid-security-camera:before {
-  content: "\e926";
-}
 .icon2-security-camera:before {
   content: "\e927";
+}
+.icon2-solid-security-camera:before {
+  content: "\e926";
 }
 .icon2-security-camera-1:before {
   content: "\e928";
 }
 .icon2-shower:before {
   content: "\e929";
+}
+.icon2-road-3:before {
+  content: "\e93c";
+}
+.icon2-main-road:before {
+  content: "\e939";
+}
+.icon2-solid-high-way:before {
+  content: "\e945";
 }
 .icon2-hight-way:before {
   content: "\e92a";
@@ -171,9 +186,6 @@
 }
 .icon2-forest:before {
   content: "\e92c";
-}
-.icon2-children-play-area:before {
-  content: "\e92d";
 }
 .icon2-park-under:before {
   content: "\e92e";
@@ -208,17 +220,8 @@
 .icon2-karaoke:before {
   content: "\e938";
 }
-.icon2-main-road:before {
-  content: "\e939";
-}
 .icon2-makeup-table:before {
   content: "\e93a";
-}
-.icon2-company:before {
-  content: "\e93b";
-}
-.icon2-road-3:before {
-  content: "\e93c";
 }
 .icon2-solid-bbq:before {
   content: "\e93d";
@@ -243,9 +246,6 @@
 }
 .icon2-market:before {
   content: "\e944";
-}
-.icon2-solid-high-way:before {
-  content: "\e945";
 }
 .icon2-preschool:before {
   content: "\e946";
