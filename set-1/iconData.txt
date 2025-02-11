@@ -1,4 +1,9 @@
 const iconData = [
+{ code: "mm-1 icon1-accessories" },
+{ code: "mm-1 icon1-hand-bag-1" },
+{ code: "mm-1 icon1-health" },
+{ code: "mm-1 icon1-travel-luggage" },
+{ code: "mm-1 icon1-waist-bag" },
 { code: "mm-1 icon1-real-estate" },
 { code: "mm-1 icon1-real-estate-1" },
 { code: "mm-1 icon1-real-estate-agency" },
@@ -384,6 +389,7 @@ const iconData = [
 { code: "mm-1 icon1-solid-network" },
 { code: "mm-1 icon1-heart" },
 { code: "mm-1 icon1-solid-heart" },
+{ code: "mm-1 icon1-heart-broken" },
 { code: "mm-1 icon1-new" },
 { code: "mm-1 icon1-notice" },
 { code: "mm-1 icon1-solid-notice" },
