@@ -4,6 +4,8 @@ var fontName = "maumau-set-1";
 var prefix = "mm-1 ";
 // Danh sách icon mới
 var newIcons = [
+  "icon1-real-estate-sale",
+  "icon1-real-estate-rent",
   "icon1-heart-broken",
   "icon1-accessories",
   "icon1-hand-bag-1",
