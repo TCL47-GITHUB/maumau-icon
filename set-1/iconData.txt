@@ -1,4 +1,9 @@
 const iconData = [
+{ code: "mm-1 icon1-home-verified-solid" },
+{ code: "mm-1 icon1-multimedia" },
+{ code: "mm-1 icon1-multimedia-solid" },
+{ code: "mm-1 icon1-verified-1-solid" },
+{ code: "mm-1 icon1-verified-solid" },
 { code: "mm-1 icon1-ndv-logo" },
 { code: "mm-1 icon1-real-estate-broker" },
 { code: "mm-1 icon1-real-estate-project" },
